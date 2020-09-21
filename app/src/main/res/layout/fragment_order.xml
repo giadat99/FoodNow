@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RetaurantFragment">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/orderID"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_order" />
+        <TextView
+            android:id="@+id/txtOrderID"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="Order ID : 1234"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/orderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_below="@id/orderID"
+            android:id="@+id/restaurant"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_address" />
+        <TextView
+            android:id="@+id/txtRestaurant"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="7 Elevent Nguyen THi Minh Khai"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/restaurant"
+            android:layout_below="@id/txtOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_below="@id/restaurant"
+            android:id="@+id/destination"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_map" />
+        <TextView
+            android:id="@+id/txtDestination"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="Trung tam Tin Hoc DH Khoa hoc Tu Nhien"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/destination"
+            android:layout_below="@id/txtRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_below="@id/destination"
+            android:id="@+id/cash"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_cash" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="99000 VND"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cash"
+            android:layout_below="@id/txtDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/icDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginBottom="157dp"
+            android:src="@drawable/ic_driver" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nameDriver"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/icDriver"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="Truong Gia Dat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/icDriver"
+            android:layout_below="@id/nameDriver"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:text="53N1 - 1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Cancel Booking"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
